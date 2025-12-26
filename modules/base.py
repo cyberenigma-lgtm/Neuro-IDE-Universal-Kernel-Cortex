@@ -20,9 +20,18 @@ class NeuroModule:
         
     def build_ui(self, parent_frame: tk.Frame):
         """Override this to build your module's UI"""
+        self.parent_frame = parent_frame
         display_name = self.name
         if self.lang_key:
             display_name = engine.get_string(self.lang_key, self.name)
             
-        lbl = tk.Label(parent_frame, text=f"{display_name}\n(Under Construction)", font=FONTS["heading"], bg=COLORS["bg_panel"], fg=COLORS["text_dim"])
-        lbl.pack(expand=True)
+        self.lbl_default = tk.Label(parent_frame, text=f"{display_name}\n(Under Construction)", font=FONTS["heading"], bg=COLORS["bg_panel"], fg=COLORS["text_dim"])
+        self.lbl_default.pack(expand=True)
+        
+    def refresh_ui(self):
+        """Override this to update localized labels inside the module"""
+        if hasattr(self, "lbl_default") and self.lbl_default.winfo_exists():
+            display_name = self.name
+            if self.lang_key:
+                display_name = engine.get_string(self.lang_key, self.name)
+            self.lbl_default.config(text=f"{display_name}\n(Under Construction)")

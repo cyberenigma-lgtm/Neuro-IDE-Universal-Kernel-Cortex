@@ -281,6 +281,7 @@ System Ready.
 
     def refresh_ui(self):
         """Global UI Update on Language Change"""
+        print(f"NeuroIDE: Refreshing UI for language '{engine.current_lang}'...")
         self.title(engine.get_string("app_title"))
         self.status.config(text=engine.get_string("status_ready"))
         
@@ -292,9 +293,15 @@ System Ready.
         # Plugins
         for plugin, frame in self.plugins:
             try:
-                self.notebook.tab(frame, text=plugin.get_tab_name())
-            except:
-                pass
+                # Update Tab Name
+                new_title = plugin.get_tab_name()
+                self.notebook.tab(frame, text=new_title)
+                print(f"NeuroIDE: Updated tab {frame} to '{new_title}'")
+                
+                # Update Internal Content
+                plugin.refresh_ui()
+            except Exception as e:
+                print(f"NeuroIDE: Error updating plugin {plugin.name}: {e}")
 
         # Dashboard
         self.lbl_dash_title.config(text=engine.get_string("dash_title"))

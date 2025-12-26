@@ -42,5 +42,8 @@
     "tab_regression": "Regression",
     "tab_ubd": "Binary Diff",
     "tab_kttd": "Time-Travel Debugger",
-    "tab_ia_gating": "IA Gating Neuronal"
+    "tab_ia_gating": "IA Gating Neuronal",
+    "ia_gating_desc": "Dynamic IA Activation | Gating Neuronal (5/16 Active)",
+    "story_save": "💾 Save Chronicle",
+    "story_gen": "🎲 Generate Unique Story"
 }

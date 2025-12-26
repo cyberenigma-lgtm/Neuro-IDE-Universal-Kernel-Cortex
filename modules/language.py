@@ -6,7 +6,7 @@ from locale_engine import engine
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Language", icon="🌐")
+        super().__init__(name="Language", icon="🌐", lang_key="tab_lang")
         
     def build_ui(self, parent):
         self.parent = parent
@@ -50,13 +50,13 @@ class Plugin(NeuroModule):
             self.buttons.append(btn)
             
         # Refresh current UI
-        self.refresh_labels()
-        engine.register_callback(self.refresh_labels)
+        self.refresh_ui()
+        # engine.register_callback(self.refresh_ui) # NeuroIDE now calls this
 
     def change_language(self, code):
         engine.load_lang(code)
         
-    def refresh_labels(self):
+    def refresh_ui(self):
         # Update tab name indirectly via NeuroIDE if needed, but here we update local labels
         self.lbl_title.config(text=engine.get_string("tab_lang").strip())
         # description is static in this case as it shows all 3 main ones

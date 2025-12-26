@@ -2,6 +2,7 @@ import tkinter as tk
 import math
 from modules.base import NeuroModule
 from theme import COLORS, FONTS
+from locale_engine import engine
 
 class Plugin(NeuroModule):
     def __init__(self):
@@ -55,3 +56,6 @@ class Plugin(NeuroModule):
             
             c.create_oval(x-r, y-r/2, x+r, y+r/2, fill=color, outline="white")
             c.create_text(x, y, text=name, fill="white", font=FONTS["small"])
+
+    def refresh_ui(self):
+        self.lbl_header.config(text=engine.get_string("tab_knowledge"))

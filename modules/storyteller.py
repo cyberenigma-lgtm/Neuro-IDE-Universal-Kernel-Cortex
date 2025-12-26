@@ -228,22 +228,18 @@ class Plugin(NeuroModule):
         self.combo_mode.pack(side="left", padx=5)
         self.combo_mode.bind("<<ComboboxSelected>>", self.set_mode)
         
-        self.btn_save = tk.Button(btn_frame, text="💾 Save Chronicle", bg=COLORS["bg_panel"], fg="white", relief="flat", command=self.save_story)
+        self.btn_save = tk.Button(btn_frame, text=engine.get_string("story_save"), bg=COLORS["bg_panel"], fg="white", relief="flat", command=self.save_story)
         self.btn_save.pack(side="left", padx=10)
         
-        self.btn_random = tk.Button(btn_frame, text="🎲 Generate Unique Story", bg=COLORS["accent_secondary"], fg="white", relief="flat", command=self.start_random_story)
+        self.btn_random = tk.Button(btn_frame, text=engine.get_string("story_gen"), bg=COLORS["accent_secondary"], fg="white", relief="flat", command=self.start_random_story)
         self.btn_random.pack(side="left")
 
-        # Register for translations
-        engine.register_callback(self.on_locale_change)
-
-    def on_locale_change(self):
+    def refresh_ui(self):
         new_lang = engine.current_lang.upper()
         self.lang = new_lang
         self.combo_lang.set(new_lang)
-        # Update buttons if keys existed in JSON, but Storyteller has its own specific text
-        # We can add them to JSON later or handle here
-        pass
+        self.btn_save.config(text=engine.get_string("story_save"))
+        self.btn_random.config(text=engine.get_string("story_gen"))
 
     def set_lang(self, event):
         self.lang = self.combo_lang.get()

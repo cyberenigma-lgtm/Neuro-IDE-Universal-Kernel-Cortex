@@ -22,6 +22,7 @@ class LocaleEngine:
         
         self.load_lang(self.current_lang)
         self.initialized = True
+        print(f"LocaleEngine: Initialized instance {id(self)} with base_dir={self.base_dir}")
         
     def load_lang(self, lang_code):
         file_path = os.path.join(self.lang_dir, f"{lang_code}.json")
@@ -34,6 +35,7 @@ class LocaleEngine:
             with open(file_path, "r", encoding="utf-8") as f:
                 self.strings = json.load(f)
             self.current_lang = lang_code
+            print(f"LocaleEngine: Loaded {lang_code}.json successfully.")
             self.notify_listeners()
         except Exception as e:
             print(f"LocaleEngine: Error loading language {lang_code}: {e}")
@@ -48,6 +50,7 @@ class LocaleEngine:
             self.callbacks.append(callback)
             
     def notify_listeners(self):
+        print(f"LocaleEngine: Notifying {len(self.callbacks)} listeners...")
         for cb in self.callbacks:
             try:
                 cb()

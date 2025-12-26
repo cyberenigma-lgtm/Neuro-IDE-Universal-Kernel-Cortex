@@ -19,7 +19,7 @@ class Plugin(NeuroModule):
         self.lbl_header.pack(pady=10)
         
         # Description
-        self.lbl_desc = tk.Label(parent, text="Dynamic IA Activation | Gating Neuronal (5/16 Active)", 
+        self.lbl_desc = tk.Label(parent, text=engine.get_string("ia_gating_desc"), 
                                font=FONTS["main"], bg=COLORS["bg_panel"], fg=COLORS["text_secondary"])
         self.lbl_desc.pack()
         
@@ -99,3 +99,7 @@ class Plugin(NeuroModule):
             
         # One Critical for drama
         self.ia_states[random.choice(active_indices)] = 3
+        
+    def refresh_ui(self):
+        self.lbl_header.config(text=engine.get_string("tab_ia_gating"))
+        self.lbl_desc.config(text=engine.get_string("ia_gating_desc"))
