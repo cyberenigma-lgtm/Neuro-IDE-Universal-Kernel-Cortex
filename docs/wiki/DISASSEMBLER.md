@@ -1,21 +1,25 @@
-# ⚙️ Disassembler: ASM Transparency
+# ⚙️ Disassembler: Binary Transparency
+
+![Disassembler](../../assets/mockups/disassembler.png)
 
 ## 🇺🇸 English
 ### What is it?
-The Disassembler translates binary machine code back into human-readable Assembly instructions. It helps you verify what the CPU is actually executing.
+Our Disassembler module provides an interactive look into the x86_64 instructions being executed. It maps binary opcodes to human-readable assembly, allowing you to verify compiler output.
 
 ### How to use it?
-1. Point the **Disassembler** to an ELF binary or a raw memory segment.
-2. The IDE will generate a listing of instructions (MOV, PUSH, INT, etc.).
-3. Cross-reference this with your C source code to find compiler optimization bugs.
+1. Select an ELF binary or a memory region.
+2. Browse through the instructions.
+3. Use the **Symbol lookup** to jump directly to specific function labels.
+4. Contrast the ASM output with your C source to find optimization bottlenecks.
 
 ---
 
 ## 🇪🇸 Español
 ### ¿Qué es?
-El Disassembler traduce el código máquina binario de nuevo a instrucciones de ensamblador legibles por humanos. Te ayuda a verificar qué es lo que el procesador está ejecutando realmente.
+Nuestro módulo Disassembler proporciona una vista interactiva de las instrucciones x86_64 que se están ejecutando. Mapea los opcodes binarios a ensamblador legible, permitiéndote verificar la salida del compilador.
 
 ### ¿Cómo usarlo?
-1. Apunta el **Disassembler** a un binario ELF o a un segmento de memoria pura.
-2. El IDE generará un listado de instrucciones (MOV, PUSH, INT, etc.).
-3. Haz una referencia cruzada con tu código fuente de C para encontrar errores de optimización del compilador.
+1. Selecciona un binario ELF o una región de memoria.
+2. Navega a través de las instrucciones.
+3. Usa la **búsqueda de símbolos** para saltar directamente a etiquetas de funciones específicas.
+4. Contrasta la salida ASM con tu código fuente C para encontrar cuellos de botella de optimización.

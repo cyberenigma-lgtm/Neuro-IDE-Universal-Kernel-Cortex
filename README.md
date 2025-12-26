@@ -1,7 +1,7 @@
 # 🧠 Neuro-IDE v0.2: Mission Control Center
 ### *Humanizing the Machine | OSDev with Soul*
 
-![Banner](./assets/branding/banner_official.jpg)
+![Banner](./assets/branding/banner_official.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)

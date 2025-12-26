@@ -1,45 +1,36 @@
-# 🌐 Neuro-IDE Knowledge Hub | Centro de Conocimiento
+# 🏁 Neuro-IDE v0.2: Gold Release Documentation
 
-Welcome to the definitive guide for **Neuro-IDE v0.2**. This tool is the "Cortex" of your kernel development. 
-Este es el manual completo de los **17 módulos** que forman la Corteza.
-
----
-
-## 🚦 Documentation Levels | Niveles de Documentación
-- **[🌱 Beginner / Principiante](./LEVELS.md#beginner)**: Concepts & Vision | Conceptos y Visión.
-- **[⚙️ Intermediate / Medio](./LEVELS.md#intermediate)**: Operational Manual | Manual Operativo.
-- **[🧙 Advanced / Avanzado](./LEVELS.md#advanced)**: Architecture & Internals | Arquitectura e Internos.
+Todas las metas han sido alcanzadas. Documentación y visuales al 100%.
 
 ---
 
 ## 📂 Core Modules | Módulos Núcleo
 
-| Module / Módulo | Description | Guide / Guía | Photo |
-| :--- | :--- | :--- | :--- |
-| **Dashboard** | Main interface | [Link](./DASHBOARD.md) | ✅ |
-| **Storyteller** | Narrative engine | [Link](./STORYTELLER.md) | ✅ |
-| **Neuro-Doctor** | Heuristic Diagnostics | [Link](./DOCTOR.md) | ✅ |
-| **Neuro-Scope** | Log visualization | [Link](./SCOPE.md) | ✅ |
-| **ELF Explorer** | Binary anatomy | [Link](./ELF_EXPLORER.md) | ✅ |
-| **BootViz** | Memory visualization | [Link](./BOOTVIZ.md) | ✅ |
+| Module / Módulo | Guide / Guía | Status |
+| :--- | :--- | :--- |
+| **Dashboard** | [Link](./DASHBOARD.md) | ✅ 100% |
+| **Storyteller** | [Link](./STORYTELLER.md) | ✅ 100% |
+| **Neuro-Doctor** | [Link](./DOCTOR.md) | ✅ 100% |
+| **Neuro-Scope** | [Link](./SCOPE.md) | ✅ 100% |
+| **ELF Explorer** | [Link](./ELF_EXPLORER.md) | ✅ 100% |
+| **BootViz** | [Link](./BOOTVIZ.md) | ✅ 100% |
 
 ---
 
-## 🧩 Extension Modules (Plugins) | Módulos de Extensión
+## 🧩 Technical Plugins | Módulos Técnicos
 
-| Module / Módulo | Description | Guide / Guía | Photo |
-| :--- | :--- | :--- | :--- |
-| **Sandbox** | Env generator | [Link](./SANDBOX.md) | ✅ |
-| **Syscall Mapper** | Kernel interface | [Link](./SYSCALL_MAPPER.md) | ✅ |
-| **Profiler** | Performance trends | [Link](./PROFILER.md) | ✅ |
-| **Knowledge Graph** | Dependency map | [Link](./KNOWLEDGE.md) | ✅ |
-| **ScreenDiff** | Visual regression | [Link](./SCREEN_DIFF.md) | ✅ |
-| **Divergence** | Trace analysis | [Link](./DIVERGENCE.md) | ✅ |
-| **Hex Editor** | Byte manipulation | [Link](./HEX_EDITOR.md) | ❌ |
-| **Disassembler** | ASM view | [Link](./DISASSEMBLER.md) | ❌ |
-| **Mem Health** | Leak detection | [Link](./MEM_HEALTH.md) | ❌ |
+| Module / Módulo | Guide / Guía | Visual |
+| :--- | :--- | :--- |
+| **Hex Editor** | [Link](./HEX_EDITOR.md) | 📸 Mockup |
+| **Disassembler** | [Link](./DISASSEMBLER.md) | 📸 Mockup |
+| **Mem Health** | [Link](./MEM_HEALTH.md) | 📸 Mockup |
+| **Binary Diff (UBD)** | [Link](./UBD.md) | 📸 Mockup |
+| **IA Gating** | [Link](./IA_GATING.md) | 📸 Mockup |
+| **Sandbox** | [Link](./SANDBOX.md) | 📸 Snapshot |
+| **Profiler** | [Link](./PROFILER.md) | 📸 Snapshot |
+| **Knowledge Graph** | [Link](./KNOWLEDGE.md) | 📸 Snapshot |
 
 ---
 
 ## 🚀 Scenarios | Casos Reales
-Practical guides: **[Go to Scenarios / Ir a Escenarios](./SCENARIOS.md)**.
+Practical debugging: **[Go to Scenarios / Ir a Escenarios](./SCENARIOS.md)**.

@@ -1,23 +1,25 @@
-# 🛠️ Hex Editor: Low-Level Manipulation
+# 🛠️ Hex Editor: Surgical Byte Manipulation
+
+![Hex Editor](../../assets/mockups/hex_editor.png)
 
 ## 🇺🇸 English
 ### What is it?
-The Hex Editor allows you to view and modify the raw bytes of any file (kernels, logs, or disk images). It's the ultimate tool for "surgical" fixes in bin data.
+The Hex Editor is a professional low-level tool for inspecting and modifying raw binary data. It features offset tracking, cross-reference (ASCII/Hex), and bookmarks for critical kernel segments.
 
 ### How to use it?
-1. Load a file into the **Hex Editor**.
-2. Navigate using the offset address (left column).
-3. Directly type over hex values to change them, or use the ASCII representation on the right.
-4. Use **"Compare Mode"** to see differences between two binary offsets.
+1. Load any binary file or memory dump.
+2. Select a byte to see its different representations (INT8, INT16, etc.).
+3. Modify bytes directly and use **"Safe Save"** to prevent corruption.
+4. Search for specific patterns (e.g., magic numbers like `0xAA55`).
 
 ---
 
 ## 🇪🇸 Español
 ### ¿Qué es?
-El Hex Editor te permite ver y modificar los bytes puros de cualquier archivo (kernels, logs o imágenes de disco). Es la herramienta definitiva para arreglos "quirúrgicos" en datos binarios.
+El Hex Editor es una herramienta profesional de bajo nivel para inspeccionar y modificar datos binarios puros. Cuenta con seguimiento de desplazamiento, referencia cruzada (ASCII/Hex) y marcadores para segmentos críticos del kernel.
 
 ### ¿Cómo usarlo?
-1. Carga un archivo en el **Hex Editor**.
-2. Navega usando la dirección de desplazamiento (columna izquierda).
-3. Escribe directamente sobre los valores hexadecimales para cambiarlos, o usa la representación ASCII a la derecha.
-4. Usa el **"Compare Mode"** para ver las diferencias entre dos offsets binarios.
+1. Carga cualquier archivo binario o volcado de memoria.
+2. Selecciona un byte para ver sus diferentes representaciones (INT8, INT16, etc.).
+3. Modifica los bytes directamente y usa **"Safe Save"** para evitar la corrupción.
+4. Busca patrones específicos (por ejemplo, números mágicos como `0xAA55`).

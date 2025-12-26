@@ -1,61 +1,86 @@
 # 🖼️ Neuro-IDE v0.2: Visual Showcase & Case Studies
 ### *Humanizing the Machine | Humanizando la Máquina*
 
-Esta galería muestra el potencial del Neuro-IDE v0.2 capturado directamente desde la "Corteza".
-This gallery showcases the potential of Neuro-IDE v0.2 captured directly from the Cortex.
+Esta galería muestra el arsenal visual completo del Neuro-IDE v0.2.
+This gallery showcases the complete visual arsenal of Neuro-IDE v0.2.
 
 ---
 
-## 🚀 1. Dashboard & Storyteller
+## 🚀 1. Dashboard (The Cortex)
 ![Dashboard](./assets/screenshots/dashboard.png)
-- **EN:** Central cockpit with procedural narrative terminal.
-- **ES:** Cabina central con terminal narrativa procedimental.
+- **EN:** Central mission control for procedural logs.
+- **ES:** Control central de misión para logs procedimentales.
 
-## 🩺 2. Neuro-Doctor (Boot Compliance)
-![Boot Test](./assets/screenshots/boot_test.png)
-- **EN:** Heuristic engine for analyzing kernel panics.
-- **ES:** Motor heurístico para analizar fallos del kernel.
+## 🩺 2. Neuro-Doctor (Diagnostics)
+![Doctor](./assets/screenshots/boot_test.png)
+- **EN:** Heuristic analysis for kernel panics and #UD.
+- **ES:** Análisis heurístico para fallos del kernel y #UD.
 
-## 📡 3. Neuro-Scope (Instruction Divergence)
-![Divergence](./assets/screenshots/divergence.png)
-- **EN:** Real-time log visualization and trace comparison.
-- **ES:** Visualización de logs en tiempo real y comparativa de trazas.
+## 📡 3. Neuro-Scope (Visual Timeline)
+![Scope](./assets/screenshots/performance.png)
+- **EN:** High-speed serial log visualizer with zoom.
+- **ES:** Visualizador de logs serie con zoom dinámico.
 
-## 🔍 4. ELF Explorer (Binary Anatomy)
-![ELF Explorer](./assets/screenshots/elf_explorer.png)
-- **EN:** Deep dissection of 64-bit kernel binaries.
-- **ES:** Disección profunda de binarios de kernel de 64 bits.
+## 🔍 4. ELF Explorer (Binary Deep Dive)
+![ELF](./assets/screenshots/elf_explorer.png)
+- **EN:** Full dissection of 64-bit kernel binaries.
+- **ES:** Disección completa de binarios de kernel de 64 bits.
 
-## 🧩 5. Knowledge Graph
-![Knowledge](./assets/screenshots/knowledge_graph.png)
-- **EN:** Visual dependency map of your codebase.
-- **ES:** Mapa visual de dependencias de tu base de código.
+## 🗺️ 5. BootViz (Memory Map)
+![BootViz](./assets/screenshots/memory_map.png)
+- **EN:** E820 physical memory visualization.
+- **ES:** Visualización de memoria física E820.
 
-## 🗺️ 6. BootViz (Physical Memory Map)
-![Memory Map](./assets/screenshots/memory_map.png)
-- **EN:** 2D/3D visualization of the E820 memory map.
-- **ES:** Visualización 2D/3D del mapa de memoria E820.
+## 🛠️ 6. Hex Editor (Surgical Byte Edit)
+![Hex Editor](./assets/mockups/hex_editor.png)
+- **EN:** Low-level manipulation of bin files.
+- **ES:** Manipulación de bajo nivel de archivos binarios.
 
-## ⚖️ 7. ScreenDiff (UI Regression)
-![Screen Diff](./assets/screenshots/screen_diff.png)
-- **EN:** Automated visual comparison for graphics drivers.
-- **ES:** Comparativa visual automatizada para drivers gráficos.
+## ⚙️ 7. Disassembler (ASM View)
+![Disassembler](./assets/mockups/disassembler.png)
+- **EN:** Translating binary opcodes to x86_64 instructions.
+- **ES:** Traducción de opcodes binarios a instrucciones x86_64.
 
-## 📡 8. Syscall Mapper
+## 🏥 8. Memory Health (Leak Check)
+![Mem Health](./assets/mockups/mem_health.png)
+- **EN:** Visual heatmaps for heap allocations and leaks.
+- **ES:** Mapas de calor visuales para asignaciones y fugas.
+
+## ⚖️ 9. Universal Binary Diff (UBD)
+![UBD](./assets/mockups/binary_diff.png)
+- **EN:** Bitwise comparison between kernel versions.
+- **ES:** Comparativa bit a bit entre versiones del kernel.
+
+## 🧠 10. IA Gating Orchestrator
+![IA Gating](./assets/mockups/ia_gating.png)
+- **EN:** Real-time monitoring of the Neural Gating System.
+- **ES:** Monitorización en tiempo real del Sistema de Gating Neuronal.
+
+## 📡 11. Syscall Mapper
 ![Syscalls](./assets/screenshots/syscall_mapper.png)
-- **EN:** Real-time monitoring of the Kernel/User boundary.
-- **ES:** Monitorización en tiempo real del límite entre Kernel y Usuario.
+- **EN:** Tracking the Kernel/Userland boundary.
+- **ES:** Rastreo del límite entre Kernel y Usuario.
 
-## 📈 9. Profiler (Performance)
-![Performance](./assets/screenshots/performance.png)
-- **EN:** Monitoring boot times and memory consumption trends.
-- **ES:** Monitorización de tiempos de arranque y tendencias de consumo.
+## 🧩 12. Knowledge Graph
+![Knowledge](./assets/screenshots/knowledge_graph.png)
+- **EN:** Multi-dimensional dependency mapping.
+- **ES:** Mapeo de dependencias multidimensional.
 
-## 🧪 10. OSDev Sandbox
+## ⚖️ 13. ScreenDiff (UI Validation)
+![Screen Diff](./assets/screenshots/screen_diff.png)
+- **EN:** Pixel-perfect visual regression testing.
+- **ES:** Pruebas de regresión visual píxel a píxel.
+
+## 🧪 14. OSDev Sandbox
 ![Sandbox](./assets/screenshots/sandbox.png)
-- **EN:** Isolated environment generator for safe testing.
-- **ES:** Generador de entornos aislados para pruebas seguras.
+- **EN:** Safe environment for isolated kernel testing.
+- **ES:** Entorno seguro para pruebas aisladas de kernel.
+
+## 📈 15. Profiler (Performance)
+![Profiler](./assets/screenshots/performance.png)
+- **EN:** Boot time and resource trend monitoring.
+- **ES:** Monitorización de tiempos de arranque y tendencias.
 
 ---
-**Neuro-IDE v0.2** | *Built with Python & Soul*
+**Neuro-IDE v0.2** | *Final Gold Release*
 @José Manuel Moreno Cano / neuro-os genesis
