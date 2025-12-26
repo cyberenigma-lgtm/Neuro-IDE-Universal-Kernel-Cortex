@@ -2,6 +2,7 @@ import tkinter as tk
 import re
 from modules.base import NeuroModule
 from theme import COLORS, FONTS
+from locale_engine import engine
 
 class Plugin(NeuroModule):
     def __init__(self):
