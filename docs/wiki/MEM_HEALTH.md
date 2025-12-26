@@ -1,6 +1,6 @@
 # 🏥 Memory Health & Leak Detection
 
-![Mem Health](../../assets/mockups/mem_health.png)
+![Mem Health](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/mockups/mem_health.png)
 
 ## 🇺🇸 English
 ### What is it?

@@ -5,7 +5,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Syscall Mapper", icon="🧩")
+        super().__init__(name="Syscall Mapper", icon="🗺️", lang_key="tab_syscalls")
         
     def build_ui(self, parent):
         # Header

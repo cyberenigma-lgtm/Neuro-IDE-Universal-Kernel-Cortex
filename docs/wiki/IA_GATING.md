@@ -1,6 +1,6 @@
 # 🧠 IA Gating Orchestrator
 
-![IA Gating](../../assets/mockups/ia_gating.png)
+![IA Gating](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/mockups/ia_gating.png)
 
 ## 🇺🇸 English
 ### What is it?

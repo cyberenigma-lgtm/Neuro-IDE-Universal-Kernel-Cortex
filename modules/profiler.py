@@ -5,7 +5,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Kernel Profiler", icon="🧪")
+        super().__init__(name="Kernel Behavior", icon="📊", lang_key="tab_profiler")
         
     def build_ui(self, parent):
         # Header

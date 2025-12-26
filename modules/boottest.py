@@ -4,7 +4,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Boot Tester", icon="🔧")
+        super().__init__(name="Boot Readiness", icon="✅", lang_key="tab_boottest")
         
     def build_ui(self, parent):
         # Header

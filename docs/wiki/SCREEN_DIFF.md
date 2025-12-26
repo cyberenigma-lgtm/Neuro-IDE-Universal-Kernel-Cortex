@@ -1,6 +1,6 @@
 # ⚖️ ScreenDiff: Visual Regression
 
-![Screen Diff](../../assets/screenshots/screen_diff.png)
+![Screen Diff](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/screen_diff.png)
 
 ## 🇺🇸 English
 ### What is it?

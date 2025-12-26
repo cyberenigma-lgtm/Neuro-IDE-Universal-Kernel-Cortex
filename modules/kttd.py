@@ -5,7 +5,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Hyper-Debugger", icon="🧠")
+        super().__init__(name="Time-Travel Debugger", icon="⏳", lang_key="tab_kttd")
         
     def build_ui(self, parent):
         # Top: Controls

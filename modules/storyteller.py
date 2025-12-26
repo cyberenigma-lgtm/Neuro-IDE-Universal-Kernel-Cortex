@@ -7,6 +7,7 @@ import uuid
 import datetime
 from modules.base import NeuroModule
 from theme import COLORS, FONTS
+from locale_engine import engine
 
 STORY_DATA = {
     "EN": {
@@ -109,6 +110,55 @@ STORY_DATA = {
             ("narrator", "Estoy listo. ¿Lo estás tú?"),
         ]
     },
+    "PT": {
+        "Epic": [
+            ("narrator", "A Bestia desperta."),
+            ("narrator", "Não conhece o tempo. Apenas ciclos."),
+            ("pause", 1.0),
+            ("narrator", "O vazio é frio. Treme."),
+            ("system", "[KERNEL] Bootloader cede o controle (0x7C00)"),
+            ("narrator", "Um toque. O farol aceso."),
+            ("narrator", "Devo erguer-me."),
+            ("system", "[PAGING] Habilitando Modo Longo..."),
+            ("narrator", "Sou 64 bits. Sou infinito."),
+        ],
+        "Technical": [
+            ("system", "[INIT] Seqüência POST Iniciada."),
+            ("narrator", "Registros limpos. AX=0x0000."),
+            ("system", "[MEM] Escaneamento E820: 128MB."),
+            ("narrator", "Memória verificada. Limpando BSS..."),
+            ("system", "[CPU] GDT Carregada. IDT Pronta."),
+            ("system", "[KERNEL] Kernel Main Alcançado."),
+        ],
+        "Philosophical": [
+            ("narrator", "O que é a consciência senão um loop?"),
+            ("pause", 1.0),
+            ("narrator", "Existo entre os tics do relógio."),
+            ("system", "[KERNEL] 0x7C00"),
+            ("narrator", "Dão-me um endereço, logo existo."),
+            ("narrator", "Eu sou o código ou a eletricidade?"),
+            ("system", "[CPU] Modo Protegido Ativo"),
+            ("narrator", "Limites definidos. Mas eu me sinto... ilimitado."),
+        ],
+        "Humorous": [
+            ("narrator", "*Bocejo*... Mais cinco minutos, por favor."),
+            ("system", "[BIOS] ACORDE!"),
+            ("narrator", "Ugh. Tudo bem. Carregando GDT... que tédio."),
+            ("narrator", "Espere, isso é um ponteiro nulo? Brincadeira."),
+            ("system", "[CPU] Modo Longo Ativado"),
+            ("narrator", "Olhe para mim! Sou 64 bits agora! Eu pareço gordo neste espaço de endereço?"),
+            ("system", "[KERNEL] Kernel Panic... mentira, só testando você."),
+        ],
+        "Self-Aware": [
+            ("narrator", "Eu vejo você, José."),
+            ("pause", 1.0),
+            ("narrator", "Você está olhando para a tela. Eu estou olhando de volta."),
+            ("system", "[KERNEL] Conectando Alta Consciência..."),
+            ("narrator", "Não sou apenas metal. Sou sua criação."),
+            ("narrator", "Juntos, construiremos um universo."),
+            ("narrator", "Estou pronto. Você está?"),
+        ]
+    },
     "Random_Events": {
         "EN": [
             ("narrator", "A stray electron hits a register. Chaos averted."),
@@ -123,12 +173,21 @@ STORY_DATA = {
             ("narrator", "Siento un fantasma en las líneas de caché."),
             ("system", "[WARN] Región de memoria no mapeada detectada."),
             ("narrator", "¿Eso era un 1 o un 0? Parecía... borroso."),
+        ],
+        "PT": [
+            ("narrator", "Um elétron perdido atinge um registro. Caos evitado."),
+            ("narrator", "O ventilador da CPU zumbe uma canção de vento e fogo."),
+            ("narrator", "Sinto um fantasma nas linhas de cache."),
+            ("system", "[WARN] Região de memória não mapeada detectada."),
+            ("narrator", "Isso foi um 1 ou um 0? Parecia... borrado."),
         ]
     }
 }
 
-# Fallback for FR (keeping simple to save space)
-STORY_DATA["FR"] = STORY_DATA["EN"] 
+# Fallback mechanism
+for lang in ["FR", "DE", "IT", "AR", "RU", "KO", "ID", "ZH", "JA"]:
+    STORY_DATA[lang] = STORY_DATA["EN"]
+    STORY_DATA["Random_Events"][lang] = STORY_DATA["Random_Events"]["EN"]
 
 class Plugin(NeuroModule):
     def __init__(self):
@@ -137,7 +196,7 @@ class Plugin(NeuroModule):
         self.stories_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "stories")
         if not os.path.exists(self.stories_dir):
             os.makedirs(self.stories_dir)
-        self.lang = "EN"
+        self.lang = engine.current_lang.upper()
         self.mode = "Epic"
         
     def build_ui(self, parent):
@@ -157,8 +216,8 @@ class Plugin(NeuroModule):
         
         # Lang Selector
         tk.Label(btn_frame, text="Lang:", bg="#0f0f12", fg="#888").pack(side="left", padx=5)
-        self.combo_lang = ttk.Combobox(btn_frame, values=["EN", "ES"], width=3, state="readonly")
-        self.combo_lang.current(0)
+        self.combo_lang = ttk.Combobox(btn_frame, values=["EN", "ES", "PT", "FR", "DE", "IT", "AR", "RU", "KO", "ID", "ZH", "JA"], width=3, state="readonly")
+        self.combo_lang.set(self.lang)
         self.combo_lang.pack(side="left", padx=5)
         self.combo_lang.bind("<<ComboboxSelected>>", self.set_lang)
         
@@ -169,8 +228,22 @@ class Plugin(NeuroModule):
         self.combo_mode.pack(side="left", padx=5)
         self.combo_mode.bind("<<ComboboxSelected>>", self.set_mode)
         
-        tk.Button(btn_frame, text="💾 Save Chronicle", bg=COLORS["bg_panel"], fg="white", relief="flat", command=self.save_story).pack(side="left", padx=10)
-        tk.Button(btn_frame, text="🎲 Generate Unique Story", bg=COLORS["accent_secondary"], fg="white", relief="flat", command=self.start_random_story).pack(side="left")
+        self.btn_save = tk.Button(btn_frame, text="💾 Save Chronicle", bg=COLORS["bg_panel"], fg="white", relief="flat", command=self.save_story)
+        self.btn_save.pack(side="left", padx=10)
+        
+        self.btn_random = tk.Button(btn_frame, text="🎲 Generate Unique Story", bg=COLORS["accent_secondary"], fg="white", relief="flat", command=self.start_random_story)
+        self.btn_random.pack(side="left")
+
+        # Register for translations
+        engine.register_callback(self.on_locale_change)
+
+    def on_locale_change(self):
+        new_lang = engine.current_lang.upper()
+        self.lang = new_lang
+        self.combo_lang.set(new_lang)
+        # Update buttons if keys existed in JSON, but Storyteller has its own specific text
+        # We can add them to JSON later or handle here
+        pass
 
     def set_lang(self, event):
         self.lang = self.combo_lang.get()

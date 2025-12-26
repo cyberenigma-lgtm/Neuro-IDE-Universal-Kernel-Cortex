@@ -1,6 +1,6 @@
 # ⚙️ Disassembler: Binary Transparency
 
-![Disassembler](../../assets/mockups/disassembler.png)
+![Disassembler](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/mockups/disassembler.png)
 
 ## 🇺🇸 English
 ### What is it?

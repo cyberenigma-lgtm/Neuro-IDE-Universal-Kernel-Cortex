@@ -1,6 +1,6 @@
 # 📡 Neuro-Scope & Divergence Analyzer
 
-![Divergence](../../assets/screenshots/divergence.png)
+![Divergence](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/divergence.png)
 
 ## 🇺🇸 English
 ### What is it?

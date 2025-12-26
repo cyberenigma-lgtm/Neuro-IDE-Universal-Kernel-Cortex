@@ -5,11 +5,13 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="OSDev Knowledge Graph", icon="🧠")
+        super().__init__(name="OSDev Knowledge Graph", icon="🧠", lang_key="tab_knowledge")
         
     def build_ui(self, parent):
+        self.parent = parent
         # Header
-        tk.Label(parent, text="Concept Dependencies", font=FONTS["heading"], bg=COLORS["bg_panel"], fg="white").pack(pady=10)
+        self.lbl_header = tk.Label(parent, text=engine.get_string("tab_knowledge"), font=FONTS["heading"], bg=COLORS["bg_panel"], fg="white")
+        self.lbl_header.pack(pady=10)
         
         self.canvas = tk.Canvas(parent, bg="#1a1a2e", highlightthickness=0)
         self.canvas.pack(fill="both", expand=True, padx=10, pady=10)

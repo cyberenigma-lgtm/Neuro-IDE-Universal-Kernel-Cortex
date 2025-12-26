@@ -1,6 +1,6 @@
 # ⚖️ Universal Binary Diff (UBD)
 
-![UBD](../../assets/mockups/binary_diff.png)
+![UBD](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/mockups/binary_diff.png)
 
 ## 🇺🇸 English
 ### What is it?

@@ -1,6 +1,6 @@
 # 🛠️ Hex Editor: Surgical Byte Manipulation
 
-![Hex Editor](../../assets/mockups/hex_editor.png)
+![Hex Editor](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/mockups/hex_editor.png)
 
 ## 🇺🇸 English
 ### What is it?

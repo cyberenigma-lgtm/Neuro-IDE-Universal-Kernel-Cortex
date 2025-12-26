@@ -4,7 +4,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Boot Visualizer", icon="🌀")
+        super().__init__(name="Bootloader Visualizer", icon="🖼️", lang_key="tab_bootviz")
         
     def build_ui(self, parent):
         # Split: Left (Canvas), Right (Controls)

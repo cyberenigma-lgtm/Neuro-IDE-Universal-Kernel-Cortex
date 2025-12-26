@@ -4,7 +4,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Instruction Divergence", icon="🧬")
+        super().__init__(name="Instruction Divergence", icon="📉", lang_key="tab_divergence")
         
     def build_ui(self, parent):
         # Header

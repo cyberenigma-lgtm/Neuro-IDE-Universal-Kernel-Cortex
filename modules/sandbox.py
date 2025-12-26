@@ -4,7 +4,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="OSDev Sandbox Generator", icon="🧱")
+        super().__init__(name="OSDev Generator", icon="🏗️", lang_key="tab_sandbox")
         
     def build_ui(self, parent):
         # Header

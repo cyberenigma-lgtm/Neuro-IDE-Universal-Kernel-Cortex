@@ -1,6 +1,6 @@
 # 🎭 Storyteller: The Kernel Narrative
 
-![Dashboard](../../assets/screenshots/dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/dashboard.png)
 
 ## 🇺🇸 English
 ### What is it?

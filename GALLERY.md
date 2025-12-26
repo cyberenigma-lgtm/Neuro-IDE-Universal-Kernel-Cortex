@@ -81,6 +81,21 @@ This gallery showcases the complete visual arsenal of Neuro-IDE v0.2.
 - **EN:** Boot time and resource trend monitoring.
 - **ES:** Monitorización de tiempos de arranque y tendencias.
 
+## 🌐 16. Universal Localization (Multi-Lang)
+![Localization](./assets/mockups/language_tab.png)
+- **EN:** Support for 11+ languages with dynamic switching.
+- **ES:** Soporte para 11+ idiomas con cambio dinámico.
+
+## 🧬 17. Instruction Divergence
+![Divergence](./assets/screenshots/performance.png)
+- **EN:** Tracking architectural drift in kernel code.
+- **ES:** Rastreo de derivas arquitectónicas en el código.
+
+## 🕹️ 18. Boot Readiness (Checklist)
+![Boot Readiness](./assets/screenshots/boot_test.png)
+- **EN:** Pre-flight checks for bare metal deployment.
+- **ES:** Chequeos previos al despliegue en hardware real.
+
 ---
-**Neuro-IDE v0.2** | *Final Gold Release*
+**Neuro-IDE v0.2.1** | *Universal Gold Edition*
 @José Manuel Moreno Cano / neuro-os genesis

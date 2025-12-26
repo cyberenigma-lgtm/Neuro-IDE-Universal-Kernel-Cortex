@@ -4,7 +4,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Screen Diff", icon="🛰")
+        super().__init__(name="ScreenDiff", icon="📺", lang_key="tab_screendiff")
         
     def build_ui(self, parent):
         # Header

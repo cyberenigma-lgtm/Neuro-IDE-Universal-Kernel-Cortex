@@ -1,6 +1,6 @@
 # 🚀 Profiler: Performance & Trends
 
-![Performance](../../assets/screenshots/performance.png)
+![Performance](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/performance.png)
 
 ## 🇺🇸 English
 ### What is it?

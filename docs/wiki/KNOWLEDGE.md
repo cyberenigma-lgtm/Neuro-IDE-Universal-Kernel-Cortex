@@ -1,6 +1,6 @@
 # 🧩 Knowledge Graph: Concept Mapping
 
-![Knowledge](../../assets/screenshots/knowledge_graph.png)
+![Knowledge](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/knowledge_graph.png)
 
 ## 🇺🇸 English
 ### What is it?

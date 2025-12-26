@@ -2,7 +2,7 @@
 
 | Sandbox | Knowledge Graph |
 | :--- | :--- |
-| ![Sandbox](../../assets/screenshots/sandbox.png) | ![Knowledge](../../assets/screenshots/knowledge_graph.png) |
+| ![Sandbox](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/sandbox.png) | ![Knowledge](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/knowledge_graph.png) |
 
 ## 🇺🇸 English
 ### What is it?

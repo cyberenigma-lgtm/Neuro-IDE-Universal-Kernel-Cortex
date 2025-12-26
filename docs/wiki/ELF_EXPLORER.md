@@ -1,6 +1,6 @@
 # 🔍 ELF Explorer: Binary Anatomy
 
-![ELF Explorer](../../assets/screenshots/elf_explorer.png)
+![ELF Explorer](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/elf_explorer.png)
 
 ## 🇺🇸 English
 ### What is it?

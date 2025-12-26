@@ -1,6 +1,6 @@
 # 🗺️ BootViz: Memory Visualization
 
-![Memory Map](../../assets/screenshots/memory_map.png)
+![Memory Map](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/memory_map.png)
 
 ## 🇺🇸 English
 ### What is it?

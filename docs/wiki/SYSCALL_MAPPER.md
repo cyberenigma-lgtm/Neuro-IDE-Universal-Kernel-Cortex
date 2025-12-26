@@ -1,6 +1,6 @@
 # 📡 Syscall Mapper: Kernel/User Interface
 
-![Syscalls](../../assets/screenshots/syscall_mapper.png)
+![Syscalls](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/syscall_mapper.png)
 
 ## 🇺🇸 English
 ### What is it?

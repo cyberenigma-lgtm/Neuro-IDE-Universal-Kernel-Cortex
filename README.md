@@ -21,6 +21,8 @@ Why watch dry logs when your kernel can tell its own story? Neuro-IDE features a
 - **BootViz:** Physical memory visualization (E820).
 - **ELF Explorer:** Deep binary dissection.
 - **Syscall Mapper:** Real-time userland tracking.
+- **🌐 Universal Localization:** Full interface support for 11+ languages (EN, ES, PT, FR, DE, IT, AR, RU, KO, ID, ZH, JA).
+- **🛡️ IA Gating Monitor:** Real-time brain-like resource activation visualizer.
 
 ### 🚀 Quick Start
 ```bash
@@ -33,7 +35,7 @@ python neuro_ide.py
 
 ## 🇪🇸 Versión en Español
 
-Neuro-IDE es una herramienta sin parangón en el ecosistema OSDev. Es una **Corteza** técnica diseñada para unir el silicio frío con la comprensión humana. Proporciona 17 módulos integrados para diagnosticar, visualizar y narrar el nacimiento de tu sistema operativo.
+Neuro-IDE es una herramienta sin parangón en el ecosistema OSDev. Es una **Corteza** técnica diseñada para unir el silicio frío con la comprensión humana. Proporciona 18 módulos integrados para diagnosticar, visualizar y narrar el nacimiento de tu sistema operativo.
 
 ### 🎭 La Visión: El Narrador del Kernel
 ¿Por qué mirar logs secos cuando tu kernel puede contar su propia historia? Neuro-IDE cuenta con un **Motor Narrativo** único que transforma eventos técnicos de arranque en cronologías literarias con 5 modos distintos (Épico, Técnico, Filosófico, Humorístico, Auto-consciente).
@@ -43,6 +45,8 @@ Neuro-IDE es una herramienta sin parangón en el ecosistema OSDev. Es una **Cort
 - **BootViz:** Visualización de memoria física (E820).
 - **ELF Explorer:** Disección profunda de binarios.
 - **Syscall Mapper:** Rastreo en tiempo real de llamadas al sistema.
+- **🌐 Localización Universal:** Soporte completo de interfaz para 11+ idiomas (EN, ES, PT, FR, DE, IT, AR, RU, KO, ID, ZH, JA).
+- **🛡️ Monitor de IA Gating:** Visualizador de activación de recursos estilo cerebral en tiempo real.
 
 ### 🚀 Inicio Rápido
 ```bash
@@ -54,8 +58,18 @@ python neuro_ide.py
 ---
 
 ## 🖼️ Visual Experience | Experiencia Visual
-Check our **[GALLERY.md](./GALLERY.md)** for a full tour of all 17 modules with real-world case studies.
-*Consulta nuestra **[GALLERY.md](./GALLERY.md)** para un recorrido completo por los 17 módulos.*
+Check our **[GALLERY.md](./GALLERY.md)** for a full tour of all 18 modules with real-world case studies.
+*Consulta nuestra **[GALLERY.md](./GALLERY.md)** para un recorrido completo por los 18 módulos.*
+
+---
+
+## 🇧🇷 Versão em Português-BR
+
+Neuro-IDE agora é totalmente **Trilíngue** (e mais!). Você pode alternar a interface completa para Português, Inglês ou Espanhol na nova aba de **Seleção de Idioma**.
+
+### 🛠️ Novos Recursos
+- **Motor Narrativo:** Agora conta histórias do kernel em Português-BR.
+- **Interface Localizada:** Todos os painéis e ferramentas traduzidos.
 
 ---
 

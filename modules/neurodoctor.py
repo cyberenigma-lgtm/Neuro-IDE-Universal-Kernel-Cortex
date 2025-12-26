@@ -5,7 +5,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Neuro-Doctor", icon="🧨")
+        super().__init__(name="Neuro-Doctor", icon="🧨", lang_key="tab_doctor")
         
     def build_ui(self, parent):
         # Layout: Left (Input), Right (Diagnosis)

@@ -5,7 +5,7 @@ from theme import COLORS, FONTS
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Binary Diff", icon="🔍")
+        super().__init__(name="Binary Diff", icon="🔍", lang_key="tab_ubd")
         self.file1_path = None
         self.file2_path = None
         

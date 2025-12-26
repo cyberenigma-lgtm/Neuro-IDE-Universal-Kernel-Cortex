@@ -1,6 +1,6 @@
 # 🩺 Neuro-Doctor: Diagnostic Hub
 
-![Boot Test](../../assets/screenshots/boot_test.png)
+![Boot Test](https://raw.githubusercontent.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/main/assets/screenshots/boot_test.png)
 
 ## 🇺🇸 English
 ### What is it?
