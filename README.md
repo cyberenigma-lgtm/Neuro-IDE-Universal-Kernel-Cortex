@@ -7,71 +7,62 @@
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Status: Mega-Integrated](https://img.shields.io/badge/Status-Mega--Integrated-brightgreen.svg)]()
 
+---
+
+## 🇺🇸 English Version
+
 Neuro-IDE is an unmatched tool in the OSDev ecosystem. It is a technical **Cortex** designed to bridge the gap between cold silicon and human understanding. It provides 17 integrated modules to diagnose, visualize, and narrate the birth of your operating system.
 
----
+### 🎭 The Vision: Kernel Storyteller
+Why watch dry logs when your kernel can tell its own story? Neuro-IDE features a unique **Narrative Engine** that transforms technical boot events into literal chronologies with 5 distinct modes (Epic, Technical, Philosophical, Humorous, Self-Aware).
 
-## 🎭 The Vision: Kernel Storyteller
-Why watch dry logs when your kernel can tell its own story? Neuro-IDE features a unique **Narrative Engine** that transforms technical boot events into literal chronologies.
-- **5 Modes:** Epic, Technical, Philosophical, Humorous, Self-Aware.
-- **Bilingual:** Native support for English and Spanish.
-- **Procedural:** Generates unique tales by mixing real kernel events with philosophical interludes.
+### 🛠️ Core Modules
+- **Neuro-Doctor:** Heuristic diagnostics for panics.
+- **BootViz:** Physical memory visualization (E820).
+- **ELF Explorer:** Deep binary dissection.
+- **Syscall Mapper:** Real-time userland tracking.
 
----
-
-## 🛠️ The Lobes (Integrated Modules)
-
-| Module | Icon | Description |
-| :--- | :--- | :--- |
-| **Neuro-Doctor** | 🩺 | Heuristic diagnosis for Kernel Panics and #UD. |
-| **Neuro-Scope** | 📡 | Real-time timeline of serial logs and events. |
-| **BootViz** | 🗺️ | Visual memory map visualizer for boot stages. |
-| **ELF Ex** | 🔍 | Deep-dive explorer for 64-bit ELF binaries. |
-| **Storyteller** | 🎭 | Procedural narrative engine (The heart of the IDE). |
-
----
-
-## 🚀 Quick Start
+### 🚀 Quick Start
 ```bash
-# Clone the repository
 git clone https://github.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex.git
 cd Neuro-IDE-Universal-Kernel-Cortex
-
-# Launch the Cortex
 python neuro_ide.py
 ```
 
 ---
 
-## 🇪🇸 Versión en Español: Misión de Control
+## 🇪🇸 Versión en Español
 
-Neuro-IDE es una herramienta sin parangón. Es una **Corteza** técnica diseñada para unir el silicio frío con la comprensión humana. Proporciona 17 módulos integrados para diagnosticar, visualizar y narrar el nacimiento de tu sistema operativo.
+Neuro-IDE es una herramienta sin parangón en el ecosistema OSDev. Es una **Corteza** técnica diseñada para unir el silicio frío con la comprensión humana. Proporciona 17 módulos integrados para diagnosticar, visualizar y narrar el nacimiento de tu sistema operativo.
 
-### El Narrador del Kernel
-Transforma logs secos en crónicas literarias con 5 modos narrativos (Épico, Técnico, Filosófico, Humorístico, Auto-consciente).
+### 🎭 La Visión: El Narrador del Kernel
+¿Por qué mirar logs secos cuando tu kernel puede contar su propia historia? Neuro-IDE cuenta con un **Motor Narrativo** único que transforma eventos técnicos de arranque en cronologías literarias con 5 modos distintos (Épico, Técnico, Filosófico, Humorístico, Auto-consciente).
 
----
+### 🛠️ Módulos Núcleo
+- **Neuro-Doctor:** Diagnósticos heurísticos para panics.
+- **BootViz:** Visualización de memoria física (E820).
+- **ELF Explorer:** Disección profunda de binarios.
+- **Syscall Mapper:** Rastreo en tiempo real de llamadas al sistema.
 
-## 📚 Documentation & Wiki
-Check out our **[Comprehensive Wiki](./docs/wiki/INDEX.md)**:
-- **[🌱 Beginner](./docs/wiki/LEVELS.md#beginner)**: Concepts.
-- **[⚙️ Intermediate](./docs/wiki/LEVELS.md#intermediate)**: Manual.
-- **[🧙 Advanced](./docs/wiki/LEVELS.md#advanced)**: Architecture.
-- **[🚀 Real-World Scenarios](./docs/wiki/SCENARIOS.md)**: Troubleshooting.
-
----
-
-## 🖼️ Visual Gallery
-![Dashboard](./assets/screenshots/dashboard.png)
-*Cortex Dashboard showing real-time telemetry.*
-
-![Memory Map](./assets/screenshots/memory_map.png)
-*BootViz: Physical memory layout visualization.*
-
-![ELF Explorer](./assets/screenshots/elf_explorer.png)
-*ELF Ex: Deep anatomy of a 64-bit kernel binary.*
+### 🚀 Inicio Rápido
+```bash
+git clone https://github.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex.git
+cd Neuro-IDE-Universal-Kernel-Cortex
+python neuro_ide.py
+```
 
 ---
 
+## 🖼️ Visual Experience | Experiencia Visual
+Check our **[GALLERY.md](./GALLERY.md)** for a full tour of all 17 modules with real-world case studies.
+*Consulta nuestra **[GALLERY.md](./GALLERY.md)** para un recorrido completo por los 17 módulos.*
+
+---
+
+## 📚 Documentation & Wiki | Documentación
+Explore the **[Knowledge Hub / Wiki](https://github.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/wiki)** for deep dives into every module and OSDev scenario.
+*Explora el **[Wiki](https://github.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex/wiki)** para profundizar en cada módulo y escenario.*
+
+---
 **Developed by:** José Manuel Moreno Cano / neuro-os genesis
-*Built with Python & Tkinter for maximum portability.*
+*Humanizing the Machine | Humanizando la Máquina*
