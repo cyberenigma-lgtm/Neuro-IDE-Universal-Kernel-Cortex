@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+stories/chronicle_*.txt
+probe_result.json
+neuro-ide.log
