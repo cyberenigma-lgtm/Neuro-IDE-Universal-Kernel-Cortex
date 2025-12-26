@@ -1,17 +1,18 @@
 # 🧠 Neuro-IDE v0.2: Mission Control Center
 ### *Humanizing the Machine | OSDev with Soul*
 
+![Banner](./assets/branding/banner_cortex.png)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Status: Mega-Integrated](https://img.shields.io/badge/Status-Mega--Integrated-brightgreen.svg)]()
 
-Neuro-IDE is not just a tool; it's a **Cortex**. Designed for the most ambitious OSDev projects, it provides 17 integrated modules to diagnose, visualize, and narrate the birth of your operating system.
+Neuro-IDE is an unmatched tool in the OSDev ecosystem. It is a technical **Cortex** designed to bridge the gap between cold silicon and human understanding. It provides 17 integrated modules to diagnose, visualize, and narrate the birth of your operating system.
 
 ---
 
 ## 🎭 The Vision: Kernel Storyteller
 Why watch dry logs when your kernel can tell its own story? Neuro-IDE features a unique **Narrative Engine** that transforms technical boot events into literal chronologies.
-
 - **5 Modes:** Epic, Technical, Philosophical, Humorous, Self-Aware.
 - **Bilingual:** Native support for English and Spanish.
 - **Procedural:** Generates unique tales by mixing real kernel events with philosophical interludes.
@@ -24,18 +25,13 @@ Why watch dry logs when your kernel can tell its own story? Neuro-IDE features a
 | :--- | :--- | :--- |
 | **Neuro-Doctor** | 🩺 | Heuristic diagnosis for Kernel Panics and #UD. |
 | **Neuro-Scope** | 📡 | Real-time timeline of serial logs and events. |
-| **BootViz** | 🗺️ | 3D-feeling memory map visualizer for boot stages. |
-| **UBD** | 🧩 | Universal Binary Diff for comparing build versions. |
-| **Storyteller** | 🎭 | Procedural narrative engine (The heart of the IDE). |
-| **Hype-Debug** | 🚀 | KTTD: Mockup for Time-Travel Debugging simulation. |
+| **BootViz** | 🗺️ | Visual memory map visualizer for boot stages. |
 | **ELF Ex** | 🔍 | Deep-dive explorer for 64-bit ELF binaries. |
-| **Sandbox** | 🧪 | OSDev isolated environment generator. |
+| **Storyteller** | 🎭 | Procedural narrative engine (The heart of the IDE). |
 
 ---
 
 ## 🚀 Quick Start
-Neuro-IDE follows a **Zero-Dependency** philosophy. You only need a modern Python installation.
-
 ```bash
 # Clone the repository
 git clone https://github.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex.git
@@ -47,39 +43,33 @@ python neuro_ide.py
 
 ---
 
-## 🇪🇸 Versión en Español
+## 🇪🇸 Versión en Español: Misión de Control
 
-Neuro-IDE no es solo una herramienta; es una **Corteza**. Diseñado para los proyectos de OSDev más ambiciosos, proporciona 17 módulos integrados para diagnosticar, visualizar y narrar el nacimiento de tu sistema operativo.
+Neuro-IDE es una herramienta sin parangón. Es una **Corteza** técnica diseñada para unir el silicio frío con la comprensión humana. Proporciona 17 módulos integrados para diagnosticar, visualizar y narrar el nacimiento de tu sistema operativo.
 
 ### El Narrador del Kernel
-Neuro-IDE incluye un motor narrativo único que transforma eventos técnicos en crónicas literarias.
-- **Modos:** Épico, Técnico, Filosófico, Humorístico, Auto-consciente.
-- **Procedimental:** Genera historias únicas mezclando logs reales con fragmentos narrativos.
+Transforma logs secos en crónicas literarias con 5 modos narrativos (Épico, Técnico, Filosófico, Humorístico, Auto-consciente).
 
 ---
 
 ## 📚 Documentation & Wiki
-For a deep dive into every module, check out our **[Comprehensive Wiki](./docs/wiki/INDEX.md)**.
-- **[🌱 Beginner](./docs/wiki/LEVELS.md#beginner)**: Concepts and vision.
-- **[⚙️ Intermediate](./docs/wiki/LEVELS.md#intermediate)**: How to use the tools.
-- **[🧙 Advanced](./docs/wiki/LEVELS.md#advanced)**: Technical architecture.
-- **[🚀 Real-World Scenarios](./docs/wiki/SCENARIOS.md)**: Solving common OSDev issues.
+Check out our **[Comprehensive Wiki](./docs/wiki/INDEX.md)**:
+- **[🌱 Beginner](./docs/wiki/LEVELS.md#beginner)**: Concepts.
+- **[⚙️ Intermediate](./docs/wiki/LEVELS.md#intermediate)**: Manual.
+- **[🧙 Advanced](./docs/wiki/LEVELS.md#advanced)**: Architecture.
+- **[🚀 Real-World Scenarios](./docs/wiki/SCENARIOS.md)**: Troubleshooting.
 
 ---
 
 ## 🖼️ Visual Gallery
-````carousel
-![Cortex Dashboard](./assets/screenshots/dashboard.png)
-<!-- slide -->
-![Boot Compliance](./assets/screenshots/boot_test.png)
-<!-- slide -->
-![ELF Explorer](./assets/screenshots/elf_explorer.png)
-<!-- slide -->
+![Dashboard](./assets/screenshots/dashboard.png)
+*Cortex Dashboard showing real-time telemetry.*
+
 ![Memory Map](./assets/screenshots/memory_map.png)
-<!-- slide -->
-![OSDev Sandbox](./assets/screenshots/sandbox.png)
-````
-*Check the [GALLERY.md](./GALLERY.md) for a full breakdown of all 17 modules.*
+*BootViz: Physical memory layout visualization.*
+
+![ELF Explorer](./assets/screenshots/elf_explorer.png)
+*ELF Ex: Deep anatomy of a 64-bit kernel binary.*
 
 ---
 
