@@ -27,9 +27,14 @@ class Plugin(NeuroModule):
         frame_output = tk.Frame(split, bg=COLORS["bg_panel"])
         split.add(frame_output, minsize=300)
         
-        tk.Label(frame_output, text="Diagnosis Report:", font=FONTS["heading"], bg=COLORS["bg_panel"], fg=COLORS["text_primary"]).pack(anchor="w", padx=10, pady=5)
+        self.lbl_header = tk.Label(frame_output, text=engine.get_string("tab_doctor"), font=FONTS["heading"], bg=COLORS["bg_panel"], fg=COLORS["text_primary"])
+        self.lbl_header.pack(anchor="w", padx=10, pady=5)
+        
         self.txt_output = tk.Text(frame_output, bg=COLORS["bg_medium"], fg=COLORS["accent_warning"], font=FONTS["mono"], borderwidth=0, state="disabled")
         self.txt_output.pack(fill="both", expand=True, padx=10, pady=10)
+
+    def refresh_ui(self):
+        self.lbl_header.config(text=engine.get_string("tab_doctor"))
 
     def diagnose(self):
         log = self.txt_input.get("1.0", tk.END)

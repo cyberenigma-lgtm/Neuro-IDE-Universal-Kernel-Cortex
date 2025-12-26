@@ -191,7 +191,7 @@ for lang in ["FR", "DE", "IT", "AR", "RU", "KO", "ID", "ZH", "JA"]:
 
 class Plugin(NeuroModule):
     def __init__(self):
-        super().__init__(name="Kernel Storyteller", icon="🎭")
+        super().__init__(name="Kernel Storyteller", icon="🎭", lang_key="tab_story")
         self.running = False
         self.stories_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "stories")
         if not os.path.exists(self.stories_dir):
