@@ -1,7 +1,7 @@
 # 🌐 Neuro-IDE Knowledge Hub | Centro de Conocimiento
 
 Welcome to the definitive guide for **Neuro-IDE v0.2**. This tool is the "Cortex" of your kernel development. 
-Este es el manual completo de los **17 módulos** que forman la Corteza.
+Este es el manual completo de los **18 módulos** que forman la Corteza.
 
 ---
 
@@ -40,6 +40,7 @@ Este es el manual completo de los **17 módulos** que forman la Corteza.
 | **UBD** | Binary Diff | [Link](./UBD) | ✅ |
 | **IA Gating** | Neural Orchestrator | [Link](./IA_GATING) | ✅ |
 | **KTTD** | Time-Travel Debug | [Link](./KTTD) | 🧪 |
+| **Language** | Global Localization | [Link](./SCENARIOS) | 🌐 |
 
 ---
 
