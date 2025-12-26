@@ -38,8 +38,8 @@ Neuro-IDE follows a **Zero-Dependency** philosophy. You only need a modern Pytho
 
 ```bash
 # Clone the repository
-git clone https://github.com/neuro-os/neuro-ide.git
-cd neuro-ide
+git clone https://github.com/cyberenigma-lgtm/Neuro-IDE-Universal-Kernel-Cortex.git
+cd Neuro-IDE-Universal-Kernel-Cortex
 
 # Launch the Cortex
 python neuro_ide.py
