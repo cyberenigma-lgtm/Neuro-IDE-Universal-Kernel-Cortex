@@ -1,34 +1,25 @@
-# 🎭 Storyteller: El Narrador del Kernel
+# 🎭 Storyteller: The Kernel Narrative
 
-El módulo **Storyteller** es lo que hace que Neuro-IDE sea verdaderamente único. Transforma los eventos técnicos y logs fríos del kernel en una crónica literaria en tiempo real.
+![Dashboard](../../assets/screenshots/dashboard.png)
 
----
+## 🇺🇸 English
+### What is it?
+Storyteller is the heart and soul of Neuro-IDE. It transforms cold, dry serial logs into a live literary chronicle, giving your operating system a unique "voice".
 
-## 🌱 Principiante (¿Por qué narrar un Kernel?)
-Imagina que un bebé nace y, en lugar de llorar, imprime una lista de códigos de error. Sería difícil conectar con él, ¿verdad? El Storyteller le da "voz" al kernel. 
-
-En lugar de leer `[MEM] Alloc 0x1000`, leerás algo como: *"El núcleo extendió sus raíces hacia la memoria RAM, reclamando su primer espacio en el vasto vacío del hardware."*
-
----
-
-## ⚙️ Medio (¿Cómo usarlo?)
-El Storyteller se alimenta de los logs capturados por el **NeuroBus**. 
-
-### Modos de Narrativa:
-1.  **Épico:** Tu kernel es un héroe en una odisea tecnológica.
-2.  **Técnico:** Mantén la precisión, pero con una estructura de bitácora elegante.
-3.  **Filosófico:** Reflexiona sobre la naturaleza del silicio y el software.
-4.  **Humorístico:** El kernel se queja de la poca RAM o de lo lento que es el BIOS.
-5.  **Auto-Consciente:** El kernel sabe que es un software y te habla a ti, el creador.
-
-**Consejo:** Usa el botón `Generate Unique Story` para que el motor procedimental cree variaciones únicas basadas en el estado actual de tu sistema.
+### How to use it?
+1. Activate the **"Narrative Mode"** in the Main Dashboard.
+2. Select your preferred style (Epic, Philosophical, etc.).
+3. Read the terminal on the right; the IDE will procedurally generate story fragments based on your boot events.
+4. Use the **"Chronicles"** tab to save and export your kernel's life story.
 
 ---
 
-## 🧙 Avanzado (Bajo la Capucha)
-El motor de Storyteller (`storyteller.py`) utiliza un sistema de **Plantillas Híbridas**.
+## 🇪🇸 Español
+### ¿Qué es?
+Storyteller es el corazón y alma de Neuro-IDE. Transforma los logs serie fríos y secos en una crónica literaria en vivo, dándole a tu sistema operativo una "voz" única.
 
-- **STORY_DATA**: Una base de datos integrada (JSON-like) que contiene fragmentos narrativos para cada idioma (EN/ES/FR) y cada modo.
-- **Lógica Procedimental**: La función `start_random_story` selecciona aleatoriamente "eventos de encuentro" y los mezcla con puntos de control fijos de la narrativa.
-- **Persistencia**: Las crónicas se guardan en la carpeta `stories/` con metadatos UUID, permitiendo realizar comparaciones literarias entre diferentes sesiones de depuración.
-- **Fallback**: Sistema robusto de traducción que vuelve al inglés si un fragmento no está disponible en el idioma seleccionado.
+### ¿Cómo usarlo?
+1. Activa el **"Narrative Mode"** en el Panel Principal.
+2. Selecciona tu estilo preferido (Épico, Filosófico, etc.).
+3. Lee la terminal a la derecha; el IDE generará procedimentalmente fragmentos de historia basados en tus eventos de arranque.
+4. Usa la pestaña **"Chronicles"** para guardar y exportar la historia de vida de tu kernel.

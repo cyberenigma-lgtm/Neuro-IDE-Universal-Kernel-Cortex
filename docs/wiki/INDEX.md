@@ -1,32 +1,45 @@
-# 🌐 Neuro-IDE Knowledge Hub
+# 🌐 Neuro-IDE Knowledge Hub | Centro de Conocimiento
 
-Bienvenido a la Wiki oficial de **Neuro-IDE v0.2**. Esta es una herramienta sin parangón en el ecosistema de OSDev, diseñada no solo para depurar código, sino para humano-izar el proceso de creación de un sistema operativo.
-
----
-
-## 🚦 Elige tu nivel de profundidad
-Para que esta herramienta sea útil para todos, hemos dividido la documentación en tres niveles:
-
-1.  **[🌱 Nivel Principiante (Conceptual)](./LEVELS.md#beginner)**: ¿Qué es esto y para qué sirve? Sin código, pura visión.
-2.  **[⚙️ Nivel Medio (Operacional)](./LEVELS.md#intermediate)**: Guía de uso, botones, filtros y flujo de trabajo diario.
-3.  **[🧙 Nivel Avanzado (Arquitectura)](./LEVELS.md#advanced)**: Cómo funciona por dentro, heurística y estructura de datos.
+Welcome to the definitive guide for **Neuro-IDE v0.2**. This tool is the "Cortex" of your kernel development. 
+Este es el manual completo de los **17 módulos** que forman la Corteza.
 
 ---
 
-## 📂 Inventario de Módulos (Lobes)
-
-| Módulo | Documentación | Rol en la Cortex |
-| :--- | :--- | :--- |
-| **Storyteller** | [Narrativa Procedimental](./STORYTELLER.md) | Corazón y Alma |
-| **Neuro-Doctor** | [Diagnóstico Heurístico](./DOCTOR.md) | Inmunología |
-| **Neuro-Scope** | [Visualización de Logs](./SCOPE.md) | Sentidos |
-| **ELF Explorer** | [Anatomía del Binario](./ELF_EXPLORER.md) | Radiografía |
-| **BootViz** | [Mapa Visual de Memoria](./BOOTVIZ.md) | Orientación Espacial |
+## 🚦 Documentation Levels | Niveles de Documentación
+- **[🌱 Beginner / Principiante](./LEVELS.md#beginner)**: Concepts & Vision | Conceptos y Visión.
+- **[⚙️ Intermediate / Medio](./LEVELS.md#intermediate)**: Operational Manual | Manual Operativo.
+- **[🧙 Advanced / Avanzado](./LEVELS.md#advanced)**: Architecture & Internals | Arquitectura e Internos.
 
 ---
 
-## 🚀 Casos de Uso Reales
-Consulta nuestra guía de **[Escenarios del Mundo Real](./SCENARIOS.md)** para ver cómo resolver problemas comunes como *Triple Faults*, *Memory Drifts* o fallos en el *GDT Loading*.
+## 📂 Core Modules | Módulos Núcleo
+
+| Module / Módulo | Description | Guide / Guía | Photo |
+| :--- | :--- | :--- | :--- |
+| **Dashboard** | Main interface | [Link](./DASHBOARD.md) | ✅ |
+| **Storyteller** | Narrative engine | [Link](./STORYTELLER.md) | ✅ |
+| **Neuro-Doctor** | Heuristic Diagnostics | [Link](./DOCTOR.md) | ✅ |
+| **Neuro-Scope** | Log visualization | [Link](./SCOPE.md) | ✅ |
+| **ELF Explorer** | Binary anatomy | [Link](./ELF_EXPLORER.md) | ✅ |
+| **BootViz** | Memory visualization | [Link](./BOOTVIZ.md) | ✅ |
 
 ---
-**Neuro-IDE** | *Explorando la frontera entre el silicio y la consciencia.*
+
+## 🧩 Extension Modules (Plugins) | Módulos de Extensión
+
+| Module / Módulo | Description | Guide / Guía | Photo |
+| :--- | :--- | :--- | :--- |
+| **Sandbox** | Env generator | [Link](./SANDBOX.md) | ✅ |
+| **Syscall Mapper** | Kernel interface | [Link](./SYSCALL_MAPPER.md) | ✅ |
+| **Profiler** | Performance trends | [Link](./PROFILER.md) | ✅ |
+| **Knowledge Graph** | Dependency map | [Link](./KNOWLEDGE.md) | ✅ |
+| **ScreenDiff** | Visual regression | [Link](./SCREEN_DIFF.md) | ✅ |
+| **Divergence** | Trace analysis | [Link](./DIVERGENCE.md) | ✅ |
+| **Hex Editor** | Byte manipulation | [Link](./HEX_EDITOR.md) | ❌ |
+| **Disassembler** | ASM view | [Link](./DISASSEMBLER.md) | ❌ |
+| **Mem Health** | Leak detection | [Link](./MEM_HEALTH.md) | ❌ |
+
+---
+
+## 🚀 Scenarios | Casos Reales
+Practical guides: **[Go to Scenarios / Ir a Escenarios](./SCENARIOS.md)**.

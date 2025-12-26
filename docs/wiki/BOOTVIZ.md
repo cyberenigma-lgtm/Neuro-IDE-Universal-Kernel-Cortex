@@ -1,27 +1,25 @@
-# 🗺️ BootViz: El Mapa de la Memoria física
+# 🗺️ BootViz: Memory Visualization
 
-BootViz proporciona una visualización espacial de cómo se distribuye la memoria RAM de tu máquina durante el arranque.
+![Memory Map](../../assets/screenshots/memory_map.png)
 
----
+## 🇺🇸 English
+### What is it?
+BootViz creates a 2D/3D visual representation of your system's physical memory layout (E820 map). It helps you see where the kernel is loaded and where reserved BIOS areas are.
 
-## 🌱 Principiante (La Vecindad de la RAM)
-La memoria de tu ordenador es como un vecindario enorme. BootViz te muestra quién vive en cada casa: quién es el kernel, dónde están los dispositivos de vídeo y qué áreas están prohibidas porque el fabricante del ordenador las usa para sí mismo.
-
----
-
-## ⚙️ Medio (El Mapa E820)
-Visualiza las regiones reportadas por el BIOS o el Bootloader.
-
-- **Usable (Verde):** Memoria libre donde puedes cargar programas.
-- **Reserved (Rojo):** Zonas prohibidas que no debes tocar.
-- **ACPI/MMIO (Naranja):** Puentes de comunicación con el hardware.
-
-Útil para saber si tu kernel cabe en la memoria o si estás intentando escribir en una zona prohibida.
+### How to use it?
+1. Navigate to the **BootViz** module.
+2. Input your memory map data (or let the IDE capture it from logs).
+3. Switch between **Summary** and **Detailed** views to inspect specific memory pages.
+4. Check for overlaps between your Kernel Heap and reserved hardware regions.
 
 ---
 
-## 🧙 Avanzado (Layout en Long Mode)
-BootViz te ayuda a planificar tu **Kernel Heap** y tus tablas de paginación.
+## 🇪🇸 Español
+### ¿Qué es?
+BootViz crea una representación visual 2D/3D del diseño de memoria física de tu sistema (mapa E820). Te ayuda a ver dónde se carga el kernel y dónde están las áreas reservadas del BIOS.
 
-- **Mapeo de Dispositivos:** Identifica las direcciones físicas para el buffer de vídeo (LFB) para pintar en pantalla.
-- **Validación de Límites:** Asegura que los descriptores de memoria no se solapen, evitando errores silenciosos de corrupción de datos que son imposibles de encontrar de otra manera.
+### ¿Cómo usarlo?
+1. Ve al módulo **BootViz**.
+2. Introduce los datos de tu mapa de memoria (o deja que el IDE los capture de los logs).
+3. Cambia entre las vistas **Resumen** y **Detallada** para inspeccionar páginas de memoria específicas.
+4. Comprueba si hay solapamientos entre tu Kernel Heap y las regiones reservadas del hardware.

@@ -1,27 +1,25 @@
-# 🔍 ELF Explorer: Anatomía del Binario
+# 🔍 ELF Explorer: Binary Anatomy
 
-Esta herramienta te permite "abrir" el archivo de tu kernel para ver cómo está organizado antes de que se ejecute.
+![ELF Explorer](../../assets/screenshots/elf_explorer.png)
 
----
+## 🇺🇸 English
+### What is it?
+The ELF Explorer allows you to dissect your kernel binary before execution. It provides a deep dive into 64-bit ELF headers, sections, and symbol tables.
 
-## 🌱 Principiante (El Mapa del Tesoro)
-Imagina que tu kernel es un edificio. El ELF Explorer es el plano que muestra dónde está la cocina (los datos), dónde están los dormitorios (el stack) y dónde están las oficinas de comando (el código).
-
----
-
-## ⚙️ Medio (Secciones y Cabeceras)
-Crucial para verificar que tu compilador está haciendo lo que tú quieres.
-
-- **.text:** Aquí vive el código ejecutable.
-- **.data / .rodata:** Aquí están tus variables y textos permanentes.
-- **.bss:** El espacio vacío reservado para el futuro.
-- **Entry Point:** La dirección exacta donde el ordenador empezará a leer tu código. Si esto está mal, el kernel nunca arrancará.
+### How to use it?
+1. Click **"Load ELF"** and select your kernel file.
+2. Browse the **Sections** tab to check alignment and sizes of `.text`, `.data`, and `.bss`.
+3. Use the **Symbol Table** to find the exact memory address of any function.
+4. Verify the **Entry Point** to ensure your bootloader will jump to the correct place.
 
 ---
 
-## 🧙 Avanzado (Estructura de 64 bits)
-Específicamente diseñado para kernels **x86_64**.
+## 🇪🇸 Español
+### ¿Qué es?
+El ELF Explorer te permite diseccionar el binario de tu kernel antes de la ejecución. Proporciona una inmersión profunda en las cabeceras, secciones y tablas de símbolos ELF de 64 bits.
 
-- **Program Headers:** Analiza los segmentos `LOAD` y sus permisos (R/W/X). Verifica que el stack no sea ejecutable por seguridad.
-- **Symbol Table:** Permite localizar funciones específicas en el binario sin necesidad de depuradores externos pesados como GDB.
-- **Validación de Alineación:** Comprueba que las secciones estén alineadas a 4KB (páginas), vital para la paginación en Long Mode.
+### ¿Cómo usarlo?
+1. Pulsa **"Load ELF"** y selecciona el archivo de tu kernel.
+2. Navega por la pestaña **Sections** para comprobar la alineación y tamaños de `.text`, `.data` y `.bss`.
+3. Usa la **Symbol Table** para encontrar la dirección de memoria exacta de cualquier función.
+4. Verifica el **Entry Point** para asegurar que tu cargador saltará al lugar correcto.
