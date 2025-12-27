@@ -1,4 +1,4 @@
-![Neuro-IDE Official Banner](file:///C:/Users/cyber/.gemini/antigravity/brain/0ed8b86b-4692-437e-bcd3-ff09183a1f5b/uploaded_image_1766801484258.png)
+![Neuro-IDE Official Banner](./assets/branding/banner.png)
 
 # 🧠 Neuro-IDE v0.2.2: The Surgical Cockpit
 ### *Dissecting Silicon | Narrating the Machine*
@@ -27,7 +27,7 @@
 | **Diagnostics** | Neuro-Doctor (Panic Classifier), Memory Health, Boot Readiness |
 | **Experience** | Kernel Storyteller (Narrative Engine), Language (11+ support) |
 
-![Neuro-Scope Timeline](file:///C:/Users/cyber/.gemini/antigravity/brain/0ed8b86b-4692-437e-bcd3-ff09183a1f5b/uploaded_image_1_1766801029101.png)
+![Neuro-Scope Timeline](./assets/branding/neuro_scope.png)
 *Figure 1: Neuro-Scope Temporal Chronicle Stream.*
 
 ---
@@ -42,7 +42,7 @@
 - **HUD de Misión**: Telemetría persistente en tiempo real.
 - **Consola Quirúrgica**: Logs de misión y retroalimentación diagnóstica.
 
-![Boot Readiness Check](file:///C:/Users/cyber/.gemini/antigravity/brain/0ed8b86b-4692-437e-bcd3-ff09183a1f5b/uploaded_image_2_1766801029101.png)
+![Boot Readiness Check](./assets/branding/boot_readiness.png)
 *Figura 2: Verificación de Cumplimiento de Arranque Universal.*
 
 ---
