@@ -1,5 +1,5 @@
 {
-    "app_title": "Neuro-IDE v0.2 (Mega-Integrado)",
+    "app_title": "Neuro-IDE v0.2.2 (Surgical Suite)",
     "status_ready": "Listo.",
     "status_loaded_modules": "Cargados {} módulos externos.",
     "tab_cortex": " Corteza ",
@@ -10,8 +10,8 @@
     "story_save": "💾 Guardar Crónica",
     "story_gen": "🎲 Generar Historia Única",
     "tab_lang": " Idioma ",
-    "dash_title": "Neuro-IDE Mega-Integrado",
-    "dash_info": "Kernel Activo: La Bestia (64 bits)\nPlugins Cargados: Dinámicos",
+    "dash_title": "Resumen de Misión Neuro-IDE",
+    "dash_info": "OBJETIVO: LA BESTIA (X64)\nPROTOCOLO: NEURO-IDE v0.2.2\nESTADO: PREPARACIÓN QUIRÚRGICA ALCANZADA",
     "dash_btn_health": "Ejecutar Chequeo de Salud",
     "probe_header": "Análisis del Kernel",
     "probe_btn_run": "▶ INICIAR PROBE",
@@ -45,5 +45,13 @@
     "tab_boottest": "BootTest",
     "tab_regression": "Regresión",
     "tab_ubd": "Diff Binario",
+    "tab_hex": "Editor Hexadecimal",
+    "tab_disasm": "Desensamblador",
+    "tab_memhealth": "Salud de Memoria",
+    "memhealth_scan": "🔍 ESCANEAR HEAP",
+    "memhealth_defrag": "🧪 DESFRAGMENTAR",
+    "memhealth_purge": "💉 PURGAR FUGAS",
+    "memhealth_log": "LOG QUIRÚRGICO",
+    "memhealth_safety": "BLOQUEO DE SEGURIDAD",
     "tab_kttd": "Depurador Temporal"
 }

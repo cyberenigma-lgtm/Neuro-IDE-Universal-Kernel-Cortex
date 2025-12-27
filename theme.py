@@ -1,38 +1,37 @@
-"""
-Neuro-IDE Theme Configuration
-Dark Mode Palette tailored for "Cyberpunk/Sci-Fi" aesthetic
-"""
-
+# NEURO-IDE SURGICAL SUITE THEME
 COLORS = {
-    # Backgrounds
-    "bg_dark": "#1e1e1e",
-    "bg_medium": "#252526",
-    "bg_light": "#333333",
-    "bg_panel": "#141414",
+    "bg_dark": "#05070A",       # Deep Space Black
+    "bg_medium": "#0D1117",     # Midnight Surface
+    "bg_light": "#161B22",      # Elevated Glass
+    "bg_panel": "#020408",      # Ultra Dark
+    "sidebar_bg": "#010409",    # Deepest Sidebar Black
+    "border": "#30363D",
+    "border_glow": "#00FFCC",
     
-    # Accents
-    "accent_primary": "#007acc", # VS Code Blue
-    "accent_secondary": "#0e639c",
-    "accent_danger": "#f44336",
-    "accent_success": "#4caf50",
-    "accent_warning": "#ff9800",
+    "accent_primary": "#00FFCC",   # Emerald Neon
+    "accent_secondary": "#7D52FF", # Electric Purple
+    "accent_danger": "#FF3366",    # Crimson Pulse
+    "accent_success": "#00FFCC", 
+    "accent_warning": "#FFB800",   # Solar Gold
+    "sidebar_active": "#21262D",
     
-    # Text
-    "text_primary": "#ffffff",
-    "text_secondary": "#cccccc",
-    "text_dim": "#666666",
+    "text_primary": "#F0F6FC",
+    "text_secondary": "#8B949E",
+    "text_dim": "#484F58",
     
-    # Timeline Specific
-    "tl_track_bg": "#1a1a1a",
-    "tl_event_diamond": "#00bcd4", # Cyan
-    "tl_log_bar": "#4caf50",      # Green
-    "tl_error_bar": "#f44336",    # Red
-    "tl_cursor": "#ffeb3b"        # Yellow
+    # Timeline Specific (Unified Surgical Style)
+    "tl_track_bg": "#0D1117",
+    "tl_event_diamond": "#00FFCC",
+    "tl_log_bar": "#00FFCC",
+    "tl_error_bar": "#FF3366",
+    "tl_cursor": "#7D52FF"
 }
 
 FONTS = {
-    "main": ("Segoe UI", 10),
-    "mono": ("Consolas", 9),
-    "heading": ("Segoe UI", 12, "bold"),
+    "main": ("Segoe UI Variable Text", 10),
+    "subheading": ("Segoe UI Variable Text", 11, "bold"),
+    "mono": ("Cascadia Code", 9),
+    "heading": ("Segoe UI Variable Display", 14, "bold"),
+    "code": ("Cascadia Code", 9),
     "small": ("Segoe UI", 8)
 }

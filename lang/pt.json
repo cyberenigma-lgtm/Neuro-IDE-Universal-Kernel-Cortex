@@ -45,5 +45,13 @@
     "tab_boottest": "Teste de Boot",
     "tab_regression": "Regressão",
     "tab_ubd": "Diff Binário",
+    "tab_hex": "Editor Hexadecimal",
+    "tab_disasm": "Desassemblador",
+    "tab_memhealth": "Saúde da Memória",
+    "memhealth_scan": "🔍 ESCANEAR HEAP",
+    "memhealth_defrag": "🧪 DESFRAGMENTAR",
+    "memhealth_purge": "💉 PURGAR LEAKS",
+    "memhealth_log": "LOG CIRÚRGICO",
+    "memhealth_safety": "TRAVA DE SEGURIDADE",
     "tab_kttd": "Depurador Temporal"
 }

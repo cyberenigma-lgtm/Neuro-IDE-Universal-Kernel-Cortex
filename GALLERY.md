@@ -1,15 +1,15 @@
-# 🖼️ Neuro-IDE v0.2: Visual Showcase & Case Studies
-### *Humanizing the Machine | Humanizando la Máquina*
+# 🖼️ Neuro-IDE v0.2.2: Visual Showcase (Surgical Suite)
+### *Dissecting Silicon | Narrating the Machine*
 
-Esta galería muestra el arsenal visual completo del Neuro-IDE v0.2.
-This gallery showcases the complete visual arsenal of Neuro-IDE v0.2.
+Esta galería muestra el arsenal visual completo del **Neuro-IDE v0.2.2**.
+This gallery showcases the complete visual arsenal of **Neuro-IDE v0.2.2**.
 
 ---
 
 ## 🚀 1. Dashboard (The Cortex)
 ![Dashboard](./assets/screenshots/dashboard.png)
-- **EN:** Central mission control for procedural logs.
-- **ES:** Control central de misión para logs procedimentales.
+- **EN:** Central mission control for procedural logs (Surgical Suite).
+- **ES:** Control central de misión para logs procedimentales (Surgical Suite).
 
 ## 🩺 2. Neuro-Doctor (Diagnostics)
 ![Doctor](./assets/screenshots/boot_test.png)
@@ -97,5 +97,5 @@ This gallery showcases the complete visual arsenal of Neuro-IDE v0.2.
 - **ES:** Chequeos previos al despliegue en hardware real.
 
 ---
-**Neuro-IDE v0.2.1** | *Universal Gold Edition*
+**Neuro-IDE v0.2.2** | *Surgical Suite Edition*
 @José Manuel Moreno Cano / neuro-os genesis
