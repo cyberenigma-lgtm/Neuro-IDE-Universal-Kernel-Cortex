@@ -34,12 +34,14 @@ class NeuroIDE(tk.Tk):
         self.plugins = [] 
         
         self.setup_style()
-        self.setup_menu() # NEW: Menu Bar
+        self.setup_menu()
         self.create_layout()
-        self.load_modules()
+        
+        # Defer module loading until after UI is fully created
+        self.after(100, self.load_modules)
 
         engine.register_callback(self.refresh_ui)
-        self.refresh_ui()
+        self.after(200, self.refresh_ui)
 
     def setup_menu(self):
         self.menubar = tk.Menu(self, bg=COLORS["bg_medium"], fg=COLORS["text_primary"], activebackground=COLORS["accent_primary"])
@@ -95,6 +97,7 @@ class NeuroIDE(tk.Tk):
         # Frames
         style.configure("TFrame", background=COLORS["bg_dark"])
         
+
     def create_layout(self):
         # 🟢 ROOT (Mission Control)
         self.main_container = tk.Frame(self, bg=COLORS["bg_dark"])
@@ -133,29 +136,9 @@ class NeuroIDE(tk.Tk):
         self.btn_hud_dual = tk.Button(self.hud_right, text="🪟 DUAL", font=FONTS["small"], bg=COLORS["bg_medium"], fg=COLORS["text_dim"], relief="flat", padx=10, command=self.toggle_dual_view)
         self.btn_hud_dual.pack(side="right", padx=10)
 
-        # 3️⃣ VERTICAL SPLIT (Explorer | Editor)
+        # 3️⃣ MAIN WORKSPACE (No Explorer)
         self.v_split = tk.PanedWindow(self.main_container, orient="horizontal", bg=COLORS["bg_dark"], sashwidth=2, sashrelief="flat")
         self.v_split.pack(fill="both", expand=True)
-
-        # Tactical Explorer (Left Panel)
-        self.explorer_frame = tk.Frame(self.v_split, bg=COLORS["bg_medium"], width=250)
-        self.v_split.add(self.explorer_frame, minsize=50) # Hideable if width=0?
-        
-        # Explorer Content
-        tk.Label(self.explorer_frame, text="TACTICAL EXPLORER", font=FONTS["small"], bg=COLORS["bg_medium"], fg=COLORS["accent_secondary"], pady=10).pack(anchor="w", padx=15)
-        self.explorer_tree = ttk.Treeview(self.explorer_frame, show="tree", selectmode="browse")
-        self.explorer_tree.pack(fill="both", expand=True, padx=5, pady=5)
-        self.explorer_tree.bind("<Double-1>", self.on_explorer_double_click)
-
-    def on_explorer_double_click(self, event):
-        item = self.explorer_tree.selection()[0]
-        # Find plugin by name
-        for plugin, frame in self.plugins:
-            if plugin.name == item:
-                self.dock_module(plugin)
-                break
-        if item == "Cortex":
-            self.show_dashboard(self.pane_primary)
 
         # 4️⃣ HORIZONTAL SPLIT (Editor | Console)
         self.h_split = tk.PanedWindow(self.v_split, orient="vertical", bg=COLORS["bg_dark"], sashwidth=2, sashrelief="flat")
@@ -181,22 +164,22 @@ class NeuroIDE(tk.Tk):
         self.console_output = tk.Text(self.console_frame, bg="#050505", fg=COLORS["text_secondary"], font=FONTS["code"], borderwidth=0, height=8, padx=10, pady=5)
         self.console_output.pack(fill="both", expand=True)
 
-        # Initial View: Dashboard
-        self.show_dashboard(self.pane_primary)
-
-        # Footer Status
+        # Footer Status (must be created BEFORE show_dashboard)
         self.status = tk.Label(self, text="Neuro-IDE Surgical Lab Online.", bg=COLORS["accent_primary"], fg="black", font=FONTS["small"], anchor="w", padx=10)
         self.status.pack(side="bottom", fill="x")
+
+        # Initial View: Dashboard
+        self.show_dashboard(self.pane_primary)
 
     def toggle_dual_view(self):
         if not self.dual_view_active:
             self.workspace.add(self.pane_secondary)
-            self.btn_dual.config(fg=COLORS["accent_primary"], text="🪟 SINGLE VIEW")
+            self.btn_hud_dual.config(fg=COLORS["accent_primary"], text="🪟 SINGLE VIEW")
             self.dual_view_active = True
             self.status.config(text="Split Screen Engaged.")
         else:
             self.workspace.forget(self.pane_secondary)
-            self.btn_dual.config(fg=COLORS["text_dim"], text="🪟 DUAL VIEW")
+            self.btn_hud_dual.config(fg=COLORS["text_dim"], text="🪟 DUAL VIEW")
             self.dual_view_active = False
             self.status.config(text="Single Screen Restored.")
 
@@ -259,26 +242,56 @@ class NeuroIDE(tk.Tk):
                 sys.modules[f"modules.{mod_name}"] = module
                 spec.loader.exec_module(module)
                 
-                # Look for Plugin class
                 if hasattr(module, "Plugin"):
                     plugin_instance = module.Plugin()
                     
-                    # Add to Sidebar
+                    # Add to Sidebar only
                     self.build_sidebar_btn(plugin_instance)
-
-                    # Add to Explorer Tree
-                    self.explorer_tree.insert("", "end", iid=plugin_instance.name, text=f"{plugin_instance.icon} {plugin_instance.name}")
 
                     # Add to Menu (for accessibility)
                     self.modules_menu.add_command(label=f"{plugin_instance.icon} {plugin_instance.name}", 
                                                  command=lambda p=plugin_instance: self.dock_module(p))
 
-                    self.plugins.append((plugin_instance, None)) # No frame yet
+                    self.plugins.append((plugin_instance, None))
                     loaded_count += 1
             except Exception as e:
                 print(f"Failed to load module {mod_file}: {e}")
                 
         self.status.config(text=f"Loaded {loaded_count} external modules.")
+
+    def build_sidebar_btn(self, plugin):
+        """Create a sidebar button for a plugin"""
+        btn = tk.Button(
+            self.sidebar_scroll,
+            text=plugin.icon,
+            font=("Segoe UI Emoji", 18),
+            bg=COLORS["sidebar_bg"],
+            fg=COLORS["text_dim"],
+            relief="flat",
+            width=3,
+            height=1,
+            command=lambda p=plugin: self.dock_module(p)
+        )
+        btn.pack(pady=5)
+        self.sidebar_btns[plugin.name] = btn
+        return btn
+
+    def build_explorer_icon(self, plugin):
+        """Create an icon button in the explorer"""
+        btn = tk.Button(
+            self.explorer_scroll,
+            text=plugin.icon,
+            font=("Segoe UI Emoji", 16),
+            bg=COLORS["bg_medium"],
+            fg=COLORS["text_dim"],
+            relief="flat",
+            width=3,
+            height=1,
+            command=lambda p=plugin: self.dock_module(p)
+        )
+        btn.pack(pady=3)
+        self.explorer_icons[plugin.name] = btn
+        return btn
 
     def show_dashboard(self, parent):
         """Helper to restore dashboard in docking system"""
@@ -405,38 +418,7 @@ class NeuroIDE(tk.Tk):
                 
         threading.Thread(target=run, daemon=True).start()
 
-    def setup_menu(self):
-        self.menubar = tk.Menu(self, bg=COLORS["bg_medium"], fg=COLORS["text_primary"], activebackground=COLORS["accent_primary"])
-        
-        # FILE MENU
-        file_menu = tk.Menu(self.menubar, tearoff=0, bg=COLORS["bg_medium"], fg=COLORS["text_primary"])
-        file_menu.add_command(label="Open Document", command=self.action_open_file)
-        file_menu.add_command(label="Save", command=self.action_save_file)
-        file_menu.add_separator()
-        file_menu.add_command(label="Exit", command=self.quit)
-        self.menubar.add_cascade(label="File", menu=file_menu)
-        
-        # MODULES MENU
-        self.modules_menu = tk.Menu(self.menubar, tearoff=0, bg=COLORS["bg_medium"], fg=COLORS["text_primary"])
-        self.menubar.add_cascade(label="Modules", menu=self.modules_menu)
-        
-        # VIEW MENU
-        view_menu = tk.Menu(self.menubar, tearoff=0, bg=COLORS["bg_medium"], fg=COLORS["text_primary"])
-        view_menu.add_command(label="Dashboard / Cortex", command=lambda: self.show_dashboard(self.pane_primary))
-        self.menubar.add_cascade(label="View", menu=view_menu)
-        
-        self.config(menu=self.menubar)
 
-    def action_open_file(self):
-        from tkinter import filedialog
-        path = filedialog.askopenfilename()
-        if path:
-            self.current_file_path = path
-            with open(path, "rb") as f:
-                self.current_data = f.read()
-            self.status.config(text=f"Surgical Target: {os.path.basename(path)}")
-            self.lbl_target.config(text=f"TARGET: {os.path.basename(path).upper()}", fg=COLORS["accent_primary"])
-            self.notify_plugins_of_file()
 
     def refresh_ui(self):
         """Global UI Update on Language Change"""
