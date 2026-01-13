@@ -1,0 +1,3 @@
+# Neuro-IDE Zero-Dependency Philosophy
+# Only standard library required (Python 3.10+)
+# Tkinter must be installed on your OS (usually bundled with Python)

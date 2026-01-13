@@ -1,0 +1,10 @@
+[2025-12-26 10:00:01] [INIT] Neuro-OS "La Bestia" booting...
+[2025-12-26 10:00:02] [MEM] Detected 128MB RAM
+[2025-12-26 10:00:03] [CPU] Feature SSE detected
+[2025-12-26 10:00:04] [CPU] Feature AVX detected
+[2025-12-26 10:00:05] [GDT] Table loaded at 0x9000
+[2025-12-26 10:00:06] [IDT] Gates initialized (0-255)
+[2025-12-26 10:00:07] [PAGING] Mapping 4GB address space...
+[2025-12-26 10:00:08] [LONG_MODE] CPU transition to IA-32e
+[2025-12-26 10:00:09] [KERNEL] Jump to kernel entry at 0xFFFFFFFF80000000
+[2025-12-26 10:00:10] !System Heartbeat active.
