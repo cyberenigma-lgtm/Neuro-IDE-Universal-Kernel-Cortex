@@ -93,5 +93,5 @@ cd Neuro-IDE-Universal-Kernel-Cortex
 python neuro_ide.py
 ```
 
-**Developed by:** José Manuel Moreno Cano
+**Developed by:** José Manuel
 *Humanizing the Machine | Dissecting Silicon*
